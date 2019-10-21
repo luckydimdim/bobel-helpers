@@ -1,0 +1,24 @@
+{
+    "name": "bobel/helpers",
+    "description": "Helpful library for operating with URI, Arrays, Dates, Links and Text.",
+    "keywords": ["helpers", "helpful methods", "array helper", "date helper", "links helper", "string helper"],
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "Dmitrii Litovchenko",
+            "email": "msk.roytop@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+		"php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
