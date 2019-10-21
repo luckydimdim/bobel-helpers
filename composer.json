@@ -6,7 +6,9 @@
     "authors": [
         {
             "name": "Dmitrii Litovchenko",
-            "email": "msk.roytop@gmail.com"
+            "email": "msk.roytop@gmail.com",
+            "homepage": "https://www.linkedin.com/in/dmitrii-litovchenko",
+            "role": "Developer"
         }
     ],
     "type": "library",
