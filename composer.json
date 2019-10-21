@@ -2,7 +2,7 @@
     "name": "bobel/helpers",
     "description": "Helpful library for operating with URI, Arrays, Dates, Links and Text.",
     "keywords": ["helpers", "helpful methods", "array helper", "date helper", "links helper", "string helper"],
-    "license": "DBAD",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Dmitrii Litovchenko",
