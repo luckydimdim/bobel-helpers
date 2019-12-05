@@ -252,4 +252,19 @@ class Text
 
         return $fixdSerializedData;
     }
+
+    /**
+     * Transliterates given string
+     *
+     * @param string $value
+     * @return string
+     */
+    public static function transliterate(string $value): string
+    {
+        $transliterator = \Transliterator::create('Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; [:Punctuation:] Remove;');
+
+        $result = $transliterator->transliterate($value);
+
+        return $result;
+    }
 }
