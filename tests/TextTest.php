@@ -144,7 +144,7 @@ final class TextTest extends TestCase
     {
         // Arrange
         $input = 'АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя';
-        $expected = 'AaBbVvGgDdEeEeZzZzIiJjKkLlMmNnOoPpRrSsTtUuFfHhCcCcSsSsʺʺYyʹʹEeUuAa';
+        $expected = 'AaBbVvGgDdEeEeGhghZzIiYyKkLlMmNnOoPpRrSsTtUuFfHhCcChchShshSchschYyYyYyEeYuyuYaya';
 
         // Act
         $actual = \Bobel\Helpers\Text::transliterate($input);
