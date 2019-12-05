@@ -29,6 +29,7 @@ Installation
 Usage
 =====
 
+```php
 echo \Bobel\Helpers\Text::getRandomString($length = 16);
 
 // Outputs Fb4tUW78cUuZZdPS
@@ -42,6 +43,7 @@ echo \Bobel\Helpers\Numeric::formatPrice(4000200.5);
 \Bobel\Helecho pers\Link::setParam('param1', 'newValue', 'https://fake.url/?param1=value1&param2=value2')
 
 // Outputs https://fake.url/?param1=newValue&param2=value2
+```
 
 Credits
 =======

@@ -136,4 +136,20 @@ final class TextTest extends TestCase
         // Assert
         $this->assertEquals($expected, $actual);
     }
+
+    /**
+     * Check if the transliterate helper works properly
+     */
+    public function testTransliterate()
+    {
+        // Arrange
+        $input = 'АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя';
+        $expected = 'AaBbVvGgDdEeEeZzZzIiJjKkLlMmNnOoPpRrSsTtUuFfHhCcCcSsSsʺʺYyʹʹEeUuAa';
+
+        // Act
+        $actual = \Bobel\Helpers\Text::transliterate($input);
+
+        // Assert
+        $this->assertEquals($expected, $actual);
+    }
 }

@@ -48,4 +48,18 @@ class Numeric
 
         return $result;
     }
+
+    /**
+     * Round up with certain accuracy
+     *
+     * @param $number
+     * @param $nearest
+     * @return float
+     */
+    public static function roundUp($number, $nearest = 0.5)
+    {
+        $result = ceil($number / $nearest) * $nearest;
+
+        return $result;
+    }
 }

@@ -41,4 +41,20 @@ final class NumericTest extends TestCase
         // Assert
         $this->assertEquals($expected, $actual);
     }
+
+    /**
+     * Check if the number rounds to nearest 0.5 value properly
+     */
+    public function testRoundUp()
+    {
+        // Arrange
+        $input = 1.55;
+        $expected = 2;
+
+        // Act
+        $actual = \Bobel\Helpers\Numeric::roundUp($input);
+
+        // Assert
+        $this->assertEquals($expected, $actual);
+    }
 }
