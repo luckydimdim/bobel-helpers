@@ -58,8 +58,19 @@ class Numeric
      */
     public static function roundUp($number, $nearest = 0.5)
     {
-        $result = ceil($number / $nearest) * $nearest;
+        if ($number == 0) {
+            return 0;
+        }
 
-        return $result;
+        $int_num = intval($number);
+        $fraction_num = $number - $int_num;
+
+        if ($fraction_num > $nearest) {
+            $fraction_num = 1;
+        } else {
+            $fraction_num = $nearest;
+        }
+
+        return $int_num + $fraction_num;
     }
 }
