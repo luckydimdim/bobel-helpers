@@ -57,4 +57,17 @@ class DateTime
 
         return $result;
     }
+
+    /**
+     * Composes the date and time string in GMT format
+     *
+     * @param int $offset seconds
+     * @return string
+     */
+    public static function getGmTimestamp(int $offset = 0): string
+    {
+        $result = gmdate('Y-m-d\TH:i:s \G\M\T+00:00', time() + $offset);
+
+        return $result;
+    }
 }
